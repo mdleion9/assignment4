@@ -148,3 +148,42 @@ mainContainer.addEventListener('click', function (event) {
   }
 
 });
+
+function renderInterview() {
+  filterSection.innerHTML = '';
+
+  if (interviewList.length === 0) {
+    filterSection.innerHTML = `
+      <div class="text-center mt-10">
+      <div class="flex flex-col items-center justify-center"><img src="jobs.png" alt=""></div>
+         <p class="text-xl font-semibold">No Jobs Available</p>
+        <p class="text-gray-500">There are no jobs in Interview tab.</p>
+      </div>
+    `;
+    return;
+  }
+
+  interviewList.forEach(job => {
+    filterSection.innerHTML += job.html;
+  });
+}
+
+
+function renderRejected() {
+  filterSection.innerHTML = '';
+
+  if (rejectedList.length === 0) {
+    filterSection.innerHTML = `
+      <div class="text-center mt-10">
+      <div class="flex flex-col items-center justify-center"><img src="jobs.png" alt=""></div>
+         <p class="text-xl font-semibold">No Jobs Available</p>
+        <p class="text-gray-500">There are no jobs in Rejected tab.</p>
+      </div>
+    `;
+    return;
+  }
+
+  rejectedList.forEach(job => {
+    filterSection.innerHTML += job.html;
+  });
+}
