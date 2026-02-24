@@ -14,7 +14,28 @@
 
 <body class="bg-gray-100">
 
- 
+ <header class="w-[90%] md:w-[80%] mx-auto mt-10">
+  <h1 class="text-4xl md:text-6xl font-bold text-green-600 mb-8">
+    Job Application Tracker
+  </h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-xl shadow">
+      <p>Total</p>
+      <p id="total" class="text-4xl font-bold">0</p>
+    </div>
+
+    <div class="bg-green-50 p-6 rounded-xl shadow">
+      <p>Interview</p>
+      <p id="interviewCount" class="text-4xl font-bold text-green-600">0</p>
+    </div>
+
+    <div class="bg-red-50 p-6 rounded-xl shadow">
+      <p>Rejected</p>
+      <p id="rejectedCount" class="text-4xl font-bold text-red-600">0</p>
+    </div>
+  </div>
+</header>
 
 </body>
 </html>
