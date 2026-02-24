@@ -37,5 +37,24 @@
   </div>
 </header>
 
+<hr class="my-10 w-[90%] md:w-[80%] mx-auto">
+
+<main class="w-[90%] md:w-[80%] mx-auto">
+
+  <div class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-semibold">Available Jobs</h2>
+    <p id="jobsCount" class="font-medium">8 Jobs</p>
+  </div>
+
+  <div class="mb-6 space-x-3">
+    <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="bg-black text-white px-5 py-2 rounded">All</button>
+    <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="bg-gray-300 px-5 py-2 rounded">Interview</button>
+    <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="bg-gray-300 px-5 py-2 rounded">Rejected</button>
+  </div>
+
+  <section id="filtered-section" class="hidden"></section>
+
+  <section id="allCards" class="space-y-6">
+
 </body>
 </html>
